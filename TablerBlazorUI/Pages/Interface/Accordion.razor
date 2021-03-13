@@ -1,0 +1,60 @@
+﻿@page "/Interface/Accordion"
+<div class="container-xl">
+    <!-- Page title -->
+    <div class="page-header d-print-none">
+        <div class="row align-items-center">
+            <div class="col">
+                <h2 class="page-title">
+                    Accordion
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <Blazorise.Accordion Class="accordion">
+                <Collapse Visible="@collapse1Visible" Class="accordion-item">
+                    <CollapseHeader Class="accordion-header">
+                        <Heading Size="HeadingSize.Is2">
+                            <Blazorise.Button Clicked="@(()=>collapse1Visible = !collapse1Visible)"> Accordion Item #1</Blazorise.Button>
+                        </Heading>
+                    </CollapseHeader>
+                    <CollapseBody class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </CollapseBody>
+                </Collapse>
+                <Collapse Visible="@collapse2Visible" Class="accordion-item">
+                    <CollapseHeader Class="accordion-header">
+                        <Heading Size="HeadingSize.Is2">
+                            <Blazorise.Button Clicked="@(()=>collapse2Visible = !collapse2Visible)">Accordion Item #2</Blazorise.Button>
+                        </Heading>
+                    </CollapseHeader>
+                    <CollapseBody class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            <strong>  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</strong>
+                        </div>
+                    </CollapseBody>
+                </Collapse>
+                <Collapse Visible="@collapse3Visible" Class="accordion-item">
+                    <CollapseHeader Class="accordion-header">
+                        <Heading Size="HeadingSize.Is2">
+                            <Blazorise.Button Clicked="@(()=>collapse3Visible = !collapse3Visible)">Accordion Item #3</Blazorise.Button>
+                        </Heading>
+                    </CollapseHeader>
+                    <CollapseBody class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                            <strong> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</strong>
+                        </div>
+                    </CollapseBody>
+                </Collapse>
+            </Blazorise.Accordion>
+            @code{
+                bool collapse1Visible = true;
+                bool collapse2Visible = false;
+                bool collapse3Visible = false;
+            }
+        </div>
+    </div>
+</div>
