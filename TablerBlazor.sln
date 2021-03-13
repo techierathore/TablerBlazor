@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TablerBlazor", "TablerBlazor\TablerBlazor.csproj", "{AF1E3D0C-A58F-49C8-A214-273F71301C90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TablerBlazor", "TablerBlazor\TablerBlazor.csproj", "{AF1E3D0C-A58F-49C8-A214-273F71301C90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TablerBlazorUI", "TablerBlazorUI\TablerBlazorUI.csproj", "{FA5F0F86-A661-4232-8893-B0981BBC4B04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TablerBlazorUI", "TablerBlazorUI\TablerBlazorUI.csproj", "{FA5F0F86-A661-4232-8893-B0981BBC4B04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
